@@ -391,3 +391,23 @@ function stringAvatar(name: string) {
         children: displayName,
     };
 }
+
+//function stringAvatar(name: string) {
+  //  let displayName = ""
+    //try {
+      //  let nameSplit = name.split(' ')
+       // displayName = `${nameSplit[0][0]}${nameSplit.length > 1 ? nameSplit[nameSplit.length-1][0] : ''}`
+    } catch {
+        displayName = name ? name[0] : "?";
+    }
+    return {
+        sx: {
+            bgcolor: "cornflowerblue",
+            width: 36,
+            height: 36,
+            margin: "auto",
+            fontSize: "1rem"
+        },
+        children: displayName,
+    };
+}
